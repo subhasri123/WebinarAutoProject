@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [webinar test suite]">
+  <parameter name="endDate" value=""/>
+  <parameter name="remoteServerIP" value="127.0.0.1"/>
+  <parameter name="timeZone" value="(GMT-05:00) Bogota, Lima, Quito"/>
+  <parameter name="title" value="D2"/>
+  <parameter name="remoteServerPort" value="4444"/>
+  <parameter name="password" value="Welcome123"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="startTime" value="6:00 AM"/>
+  <parameter name="endTime" value="10:00 PM"/>
+  <parameter name="productUrl" value="https://global.gotowebinar.com/webinars.tmpl"/>
+  <parameter name="lang" value="English"/>
+  <parameter name="email" value="subhasri.87@gmail.com"/>
+  <parameter name="startDate" value="6/15/2015"/>
+  <parameter name="desc" value="my first meeting is scheduled"/>
+  <test name="schedule meeting(failed)">
+    <classes>
+      <class name="webinar.scheduleWebinar">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="afterClass"/>
+          <include name="scheduleMeetingOneSessionTest" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- webinar.scheduleWebinar -->
+    </classes>
+  </test> <!-- schedule meeting(failed) -->
+</suite> <!-- Failed suite [webinar test suite] -->

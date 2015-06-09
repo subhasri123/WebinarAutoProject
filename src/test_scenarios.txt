@@ -1,0 +1,45 @@
+[NOTE : I have listed down few of the other scenarios, there will be many more...]
+
+Schedule Webinar test scenarios :
+-------------------------------
+Test scenarios can be categorized based on the meeting type to be scheduled.
+Below mentioned scenarios can be combined to form customer use cases which then transform 
+into use case based test cases.
+
+All the below mentioned test scenarios can be repeated for the below meeting types,
+   - One session
+   - Series
+   - Sequence
+
+	Functional positive scenarios:
+	======================
+	1. Create meeting with the below values,
+	   a. Start Date - Current month, diff date
+					 - Current month, same date
+					 - Current month, same date next year
+					 - different month, same date 
+					 (other combinations can be considered)
+		b. Start Time - Different values in the range of AM to PM
+		c. End Time - Different values in the range of AM to PM
+		d. All possible values of listed timezones
+		e. All possible values of listed languages
+		f. Meeting name with different values,
+		       - only char
+			   - only number 
+			   - Alphanumeric(with &w/o special characters)
+			   - only special char
+			   - Min Char length allowed
+			   - max char length allowed
+		g. Description field - Different possible values 
+	2. For Series/Session meeting schedule,
+	   a. Occurrence - All possible values listed
+	   b. End Date - same value combinations as Start Date
+	
+	Negative Scenarios:
+	===================
+	All the fields displayed should be tested for,
+	    - values in the boundary ranges
+		- min & max value allowed if applicable
+		- Empty values
+		- Duplicate values
+

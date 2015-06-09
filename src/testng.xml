@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="webinar test suite">
+	<parameter name="browser" value="chrome" />
+	<parameter name="remoteServerIP" value="127.0.0.1" />
+	<parameter name="remoteServerPort" value="4444" />
+	<parameter name="productUrl" value="https://global.gotowebinar.com/webinars.tmpl" />
+	<parameter name="email" value="subhasri.87@gmail.com" />
+	<parameter name="password" value="Welcome123" />
+	<parameter name="title" value="meeting5" />
+	<parameter name="desc" value="my first meeting is scheduled" />
+	<parameter name="startDate" value="6/15/2015" />
+	<parameter name="startTime" value="6:00 AM" />
+	<parameter name="endTime" value="10:00 PM" />
+	<parameter name="endDate" value="" />
+	<parameter name="timeZone" value="(GMT-05:00) Bogota, Lima, Quito" />
+	<parameter name="lang" value="English" />
+	
+ 	<test name="schedule meeting">
+ 		<classes>
+ 			<class name="webinar.scheduleWebinar">
+ 			</class>
+ 		</classes>
+ 	</test>
+</suite>
